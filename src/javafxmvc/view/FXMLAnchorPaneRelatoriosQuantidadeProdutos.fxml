@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneRelatoriosQuantidadeProduitosController">
+   <children>
+      <TableView fx:id="tableViewProdutos" layoutX="140.0" layoutY="34.0" prefHeight="329.0" prefWidth="600.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tableColumnProdutoCodigo" prefWidth="49.0" text="Código" />
+          <TableColumn fx:id="tableColumnProdutoNome" prefWidth="191.0" text="Nome" />
+            <TableColumn fx:id="tableColumnProdutoPreco" prefWidth="82.0" text="Preço" />
+            <TableColumn fx:id="tableColumnProdutoQuantidade" prefWidth="77.0" text="Quantidade" />
+            <TableColumn fx:id="tableColumnProdutoCategoria" prefWidth="200.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonImprimir" layoutX="506.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleImprimir" text="Imprimir" />
+   </children>
+</AnchorPane>

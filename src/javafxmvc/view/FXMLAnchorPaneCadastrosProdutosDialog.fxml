@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="210.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneCadastrosProdutosDialogController">
+   <children>
+      <Label layoutX="53.0" layoutY="36.0" prefHeight="17.0" prefWidth="44.0" text="Nome" />
+      <Label layoutX="56.0" layoutY="74.0" text="Preço" />
+      <Label layoutX="24.0" layoutY="110.0" text="Quantidade" />
+      <Label layoutX="35.0" layoutY="145.0" text="Categoria" />
+      <TextField fx:id="textFieldProdutoNome" layoutX="101.0" layoutY="32.0" />
+      <TextField fx:id="textFieldProdutoPreco" layoutX="101.0" layoutY="70.0" />
+      <TextField fx:id="textFieldProdutoQuantidade" layoutX="101.0" layoutY="105.0" />
+      <ComboBox fx:id="comboBoxCategoria" layoutX="101.0" layoutY="141.0" prefWidth="150.0" />
+      <Button fx:id="buttonConfirmar" layoutX="182.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Button fx:id="buttonCancelar" layoutX="266.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

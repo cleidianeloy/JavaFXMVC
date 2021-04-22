@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneCategoriasController">
+   <children>
+      <TableView fx:id="tableViewCategoria" prefHeight="400.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="89.0" text="Código" />
+          <TableColumn fx:id="tableColumnNomeCategoria" prefWidth="184.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonInserir" layoutX="353.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="25.0" prefWidth="178.0" text="Inserir" />
+      <Button fx:id="buttonAtualizar" layoutX="353.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="25.0" prefWidth="178.0" text="Alterar" AnchorPane.topAnchor="188.0" />
+      <Button fx:id="buttonDeletar" layoutX="353.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="25.0" prefWidth="178.0" text="Remover" AnchorPane.topAnchor="230.0" />
+   </children>
+</AnchorPane>
